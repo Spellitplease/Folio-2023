@@ -32,7 +32,7 @@ submit.addEventListener('submit', (e) =>{
         Subject : "Message received "+ email.value,
         Body : eBody
     }).then(
-        function(message) {
+        function(ok) {
             alert("Your message has been sent. Thank you.");
             window.location.reload();
             lname.value = '';
