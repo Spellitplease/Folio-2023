@@ -48,9 +48,11 @@ submit.addEventListener('submit', (e) =>{
 
    
 const header = document.querySelector('header');
+
 window.addEventListener('scroll', function(){
     header.classList.toggle('sticky', window.scrollY > 0);
 });
+
 
 let menu = document.querySelector('#menu-toggle');
 let navbar = document.querySelector('.navbar');
@@ -64,6 +66,7 @@ window.onscroll = function(){
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
 const fadeIn = ScrollReveal ({
     distance:'50px',
     duration:2000,
