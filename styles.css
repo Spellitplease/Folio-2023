@@ -51,7 +51,7 @@ header {
 }
 
 .logo img {
-    width: 75px;
+    width: 150px;
     height: auto;
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 .navbar a {
-    color: var(--second-color);
+    color: var(--text-color);
     font-size: var(--p-font);
     font-weight: 600;
     padding: 10px 25px;
