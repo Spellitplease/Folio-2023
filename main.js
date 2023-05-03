@@ -2,7 +2,6 @@ const lname = document.querySelector('#name');
 const firstname =document.querySelector('#firstname');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
-const phone = document.querySelector('#phone');
 const submit = document.querySelector('.form-contact');
 
 submit.addEventListener('submit', (e) =>{
