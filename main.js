@@ -1,10 +1,11 @@
 const lname = document.querySelector('#name');
-const firstname =document.querySelector('#firstname');
+const firstname = document.querySelector('#firstname');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const submit = document.querySelector('.form-contact');
+const bouton = document.querySelector("#bouton");
 
-submit.addEventListener('submit', (e) =>{
+submit.addEventListener('submit', (e) => {
     e.preventDefault();
     let nameInput = document.querySelector('input[type="text"]');
     let emailInput = document.querySelector('input[type="email"]');
@@ -14,9 +15,9 @@ submit.addEventListener('submit', (e) =>{
     } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) {
         alert("Please enter a valid email address.");
     }
-    
+
     let eBody =
-       `<b>Name: </b>${lname.value}
+        `<b>Name: </b>${lname.value}
         <br>
         <b>Firstname: </b>${firstname.value}
         <br>
@@ -25,11 +26,11 @@ submit.addEventListener('submit', (e) =>{
         <b>Message : ${message.value}</b>`
 
     Email.send({
-        SecureToken : "dd005072-fff1-4ff1-9d65-f70ee0753170",
-        To : 'thomcodeunlimited@gmail.com',
-        From : "thomcodeunlimited@gmail.com",
-        Subject : "Message received "+ email.value,
-        Body : eBody
+        SecureToken: "dd005072-fff1-4ff1-9d65-f70ee0753170",
+        To: 'thomcodeunlimited@gmail.com',
+        From: "thomcodeunlimited@gmail.com",
+        Subject: "Message received " + email.value,
+        Body: eBody
     }).then(
         function(ok) {
             alert("Your message has been sent. Thank you.");
@@ -38,17 +39,17 @@ submit.addEventListener('submit', (e) =>{
             firstname.value = '';
             email.value = '';
             message.value = '';
-            
 
-            
+
+
         }
     );
 });
 
-   
+
 const header = document.querySelector('header');
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function() {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
@@ -56,41 +57,31 @@ window.addEventListener('scroll', function(){
 let menu = document.querySelector('#menu-toggle');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = function(){
+menu.onclick = function() {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
 
-window.onscroll = function(){
+window.onscroll = function() {
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
-const fadeIn = ScrollReveal ({
-    distance:'50px',
-    duration:2000,
+const fadeIn = ScrollReveal({
+    distance: '50px',
+    duration: 2000,
     reset: true
 
 })
 
-fadeIn.reveal('.home-text',{delay: 100, origin: 'bottom'})
-fadeIn.reveal('.about, .services, .portfolio, .contact',{delay: 300, origin: 'bottom'});
+fadeIn.reveal('.home-text', { delay: 100, origin: 'bottom' })
+fadeIn.reveal('.about, .services, .portfolio, .contact', { delay: 300, origin: 'bottom' });
 
-let heart= document.querySelectorAll('.bx-heart');
+let heart = document.querySelectorAll('.bx-heart');
 heart.forEach(heart =>
-    heart.addEventListener('click',() => {
-    heart.classList.toggle('red');
+    heart.addEventListener('click', () => {
+        heart.classList.toggle('red');
 
-}));
-
-
-
-
-
-  
- 
-  
-  
-
+    }));
 
 
