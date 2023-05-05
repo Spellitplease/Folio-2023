@@ -11,3 +11,40 @@ const bouton = document.querySelector("#bouton");
          })
          .catch(error => console.error(error));
  };
+
+
+
+
+
+ 
+ const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+
+let menu = document.querySelector('#menu-toggle');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = function() {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+window.onscroll = function() {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
+
+const fadeIn = ScrollReveal({
+    distance: '50px',
+    duration: 2000,
+    reset: true
+
+})
+
+
+
+
+ 

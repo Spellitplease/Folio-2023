@@ -139,7 +139,7 @@ span {
 }
 
 header.sticky {
-    padding: 10px 16%;
+    padding: 10px;
     background: var(--bg-color);
     border-bottom: 0.1px solid #062c1a;
 }
@@ -440,9 +440,9 @@ form textarea {
     header {
         padding: 16px 3%;
     }
-    header .sticky {
-        padding: 8px 3%;
-    }
+    /*header .sticky {
+        padding: 30px; 
+    }*/
     section {
         padding: 130px 3% 60px;
     }
@@ -471,7 +471,7 @@ form textarea {
     }
 }
 
-@media (max-width:860px) {
+@media (max-width:910px) {
     #menu-toggle {
         display: block;
     }
@@ -499,12 +499,9 @@ form textarea {
         --h2-font: 2.5rem;
     }
 }
-.main{
-    background: url(images/town1.jpg);
-    height: 100vh;
-    
 
-}
+
+
 .container{
     height: auto;
     width: 90vw;
@@ -517,11 +514,10 @@ form textarea {
 }
 .random{
     margin: 0 auto ;
+    padding:10px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top:300px;
     color: var(--main-color);
     font-size: 30px;
     font-weight: 600;
@@ -574,6 +570,10 @@ form textarea {
     color:var(--text-color);
     font-size: var(--p-font);
 
+}
+
+#bouton:hover{
+    cursor: pointer;
 }
 @keyframes blur{
     from{    
