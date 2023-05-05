@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg-color: black;
+    --bg-color: #000000;
     --text-color: #fff;
     --main-color: #00c76a;
     --second-color: #acacac;
