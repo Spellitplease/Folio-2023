@@ -16,12 +16,16 @@ No installation required. It works.
 - And in major way my brain and creativity.(joke)
 
 ## Graphic choices.
+I used figma to built the model of the site.
 I 've decided to choose dark colors as black to make it classy and add some light colors as white to make the use of the site easier with touch of flashy green make it cheerful.
 For the logo i choose a bulb which represents as comics do, when a character have an idea and symbolize solutions.
 - The background color is `#000000`.
 - the font color is `#fff`
-- button, link:hover and div title color is `#00c76a`
+- button, link:hover and div title color is `#00c76a` that is a flashy green.
 - box color is `#12141c`
+- I used boxicons site for menu burger icons (https://boxicons.com/).
+
+ 
 
 ## How to use it ?
 On the landing page you have the navbar with links, click on links to reach the content you're interested in.
