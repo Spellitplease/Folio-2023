@@ -2,7 +2,7 @@
 ## To see the portfolio use https://spellitplease.github.io/Folio-2023/
 
 ## Author.
-- https://wwww.github.com/Spellitplease
+- [@thomas](https://wwwwz.github.com/Spellitplease)
 
 ## About me.
 I'm a full stack developer..in development myself.
