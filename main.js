@@ -4,7 +4,7 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const submit = document.querySelector('.form-contact');
 const bouton = document.querySelector("#bouton");
-
+// formulaire
 submit.addEventListener('submit', (e) => {
     e.preventDefault();
     let nameInput = document.querySelector('input[type="text"]');
@@ -15,7 +15,7 @@ submit.addEventListener('submit', (e) => {
     } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) {
         alert("Please enter a valid email address.");
     }
-
+//mise en forme du mail
     let eBody =
         `<b>Name: </b>${lname.value}
         <br>
