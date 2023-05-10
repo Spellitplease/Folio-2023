@@ -76,9 +76,14 @@ header {
     display: none;
 }
 
+header.sticky {
+    padding: 10px;
+    background: var(--bg-color);
+    border-bottom: 0.1px solid #062c1a;
+}
 
 /*-------------------------END HEADER------------------------------------*/
-
+/*--------------------------landing page-----------------------------------------*/
 section {
     padding: 150px 16% 50px;
 }
@@ -137,12 +142,8 @@ span {
     background: transparent;
     border: 1px solid var(--main-color);
 }
-
-header.sticky {
-    padding: 10px;
-    background: var(--bg-color);
-    border-bottom: 0.1px solid #062c1a;
-}
+/*------------------------------------------------End landing page---------------------------------------------*/
+/*---------------------------------------about me section-----------------------------------------*/
 
 .about {
     display: grid;
@@ -187,7 +188,8 @@ header.sticky {
     width: 100%;
     max-width: 460px;
 }
-
+/*----------------------------------------------------------------End about me section-------------------------------*/
+/*------------------------------------------------------------ Services section--------------------------------------*/
 .main-text {
     text-align: center;
 }
@@ -248,6 +250,8 @@ header.sticky {
 .box:hover h3 {
     color: var(--main-color);
 }
+/*------------------------------------------------------------End of services section-----------------------------*/
+/*------------------------------------------------------------Portfolio section--------------------------------------*/
 
 .portfolio-content {
     display: grid;
@@ -307,7 +311,8 @@ header.sticky {
     transition: all 0.4s ease;
     cursor: pointer;
 }
-
+/*-------------------------------------------------------end of potfolio---------------------------------------------*/
+/*-------------------------------------------------------infos section------------------------------------------------*/
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -374,6 +379,8 @@ header.sticky {
     color: var(--text-color);
     background: var(--main-color);
 }
+/*-----------------------------------------------------End infos section-------------------------------------------*/
+/*------------------------------------------------------FORM section-------------------------------------------------*/
 
 .contact-form form {
     position: relative;
@@ -412,7 +419,7 @@ form textarea {
     background: var(--second-color);
     color: var(--main-color);
 }
-
+/*-------------------------------------------------------------------footer--------------------------------------*/
 .last-div p {
     text-align: center;
     padding: 15px;
@@ -421,7 +428,8 @@ form textarea {
     font-weight: 600;
     letter-spacing: 1px;
 }
-
+/*--------------------------------------------end footer-------------------------------------------------------*/
+/*--------------------------------------------------------back to top button--------------------------------------*/
 .up {
     position: fixed;
     bottom: 2rem;
@@ -435,7 +443,8 @@ form textarea {
     padding: 10px;
     border-radius: 50%;
 }
-
+/*------------------------------------------------------end back to top button------------------------------------*/
+/*--------------------------------------------------media queries---------------------------------------------------*/
 @media (max-width: 1200px) {
     header {
         padding: 16px 3%;
@@ -500,7 +509,7 @@ form textarea {
     }
 }
 
-
+/*-------------------------------------------------------------------------Page 2----------------------------------*/
 
 .container{
     height: auto;
@@ -548,8 +557,6 @@ form textarea {
 #answer{
     position: relative;
     color: var(--text-color);
-    animation-name: blur;
-    animation-delay: 2000ms;
     height:auto;
     margin-top: 20px;
     text-align: center;
@@ -574,13 +581,4 @@ form textarea {
 
 #bouton:hover{
     cursor: pointer;
-}
-@keyframes blur{
-    from{    
-        filter: blur(5px);
-    }
-    to{
-        filter: blur(0px);
-    }
-
 }

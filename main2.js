@@ -15,15 +15,15 @@ const bouton = document.querySelector("#bouton");
 
 
 
-
+//changement de classe barre nav
  
- const header = document.querySelector('header');
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', function() {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-
+//burger menu
 let menu = document.querySelector('#menu-toggle');
 let navbar = document.querySelector('.navbar');
 
